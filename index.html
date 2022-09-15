@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css.css" media="screen">
+
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+            <h1 id="titulo">Formulário</h1>
+ 
+            <br>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>     
+                    <label for="sobrenome"><strong>Idade</strong></label>
+                    <input type="number" class="idade" name="idade" id="idade" required style="width: 40px;">      
+            </fieldset> 
+
+            <fieldset class="grupo">
+                <div class="grupo">
+                    <strong>Email</strong>
+                    <input type="email" name="email" id="email" required>
+                </div>        
+            <br>
+            <div class="campo">
+                <label><strong>Qual a sua aplicação favorita?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+            </fieldset>
+        <fieldset class="grupo">
+           
+                <strong>Como vc Classifica seu nivel?</strong>
+                <select id="classifica" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Deus</option>
+                </select>
+            
+        </fieldset>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione as tecnologias favoritas:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" >
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" >
+                    <label for="tecnologia4"> PHP</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7">
+                    <label for="tecnologia7"> Java</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" >
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" >
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6">
+                    <label for="tecnologia6"> Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" >
+                    <label for="tecnologia7"> Angular</label>
+
+                </div>
+            </fieldset>
+
+
+            <button class="botao" type="submit" onsubmit="">Enviar</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
